@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+    </style>
+    <title>Simple Cookie Example</title>
+</head>
+<body>
+
+<script>
+    // Set a cookie
+    document.cookie = "username=John Doe";
+
+    // Read the cookie and display a welcome message
+    var username = document.cookie.split('=')[1];
+    alert("Welcome, " + username + "!");
+</script>
+
+</body>
+</html>
